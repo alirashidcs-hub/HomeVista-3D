@@ -1,0 +1,6 @@
+{
+  "name": "HomeVista 3D",
+  "description": "3D Luxury Real Estate Exploration & Customization Platform featuring master plan plot mapping, house scale configuration, interior material customization, and automated investment summary.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

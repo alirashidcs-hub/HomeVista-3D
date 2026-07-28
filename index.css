@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .glass-panel, .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-panel:hover, .glass-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(0, 122, 255, 0.3);
+    box-shadow: 0 0 30px rgba(0, 122, 255, 0.15);
+  }
+
+  .primary-glow {
+    box-shadow: 0 0 25px rgba(75, 142, 255, 0.45);
+  }
+
+  .hero-gradient {
+    background: radial-gradient(circle at 50% 50%, rgba(0, 122, 255, 0.15) 0%, transparent 70%);
+  }
+
+  .plot-cell {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+
+  .plot-cell:hover {
+    transform: scale(1.06);
+    filter: brightness(1.25);
+  }
+
+  .plot-cell.selected {
+    outline: 2px solid #adc6ff;
+    outline-offset: 2px;
+    box-shadow: 0 0 20px rgba(173, 198, 255, 0.6);
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #131313;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #414755;
+}
